@@ -1,0 +1,16 @@
+{
+  "statusPath": "/user/daily-reward",
+  "claimPath": "/user/daily-reward/claim",
+  "claimMethod": "POST",
+  "tokenStorageKey": "vyce_session",
+  "tokenCookieName": "session",
+  "fields": {
+    "canClaim": "canClaim",
+    "streak": "streak",
+    "rewardAmount": "rewardAmount",
+    "bonusPercent": "streakBonusPercent",
+    "totalClaimed": "totalClaimed",
+    "lastClaim": "lastClaim"
+  },
+  "cooldownHours": 24
+}
