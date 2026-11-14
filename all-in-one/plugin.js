@@ -32,8 +32,10 @@ export const sitePlugin = {
   preserveRechargeRateVerification: true,
   preservePriceCurrency: true,
   host: "all-in-one.icu",
-  matches: ({ hostname, path, hashPath }, station = {}) => hostname === "all-in-one.icu" && (hashPath === "/tenant/models" || (path === "/" && station.adapter?.kind === "all-in-one-models")),
-  prepareMatches: ({ hostname, path, hashPath }, station = {}) => hostname === "all-in-one.icu" && (hashPath === "/tenant/models" || (path === "/" && station.adapter?.kind === "all-in-one-models")),
+  // 整域归本站：旧配置可能还指着 `#/console` 之类的历史路由，只按 host 认站点，
+  // prepare 会把 baseUrl/模式/适配器一起刷成当前页面。
+  matches: ({ hostname }) => hostname === "all-in-one.icu",
+  prepareMatches: ({ hostname }) => hostname === "all-in-one.icu",
   prepare: (stationInput, { url }) => {
     const prepared = {
       ...stationInput,
@@ -50,6 +52,7 @@ export const sitePlugin = {
   },
   mode: "page",
   openTemporaryPage: true,
+  reuseAmbiguousOriginTab: true,
   responseFormat: "all-in-one-models",
   authType: "none",
   rationale: "all-in-one.icu 用租户页面会话读取模型价格，报价单位是站点设置的结算币种",
