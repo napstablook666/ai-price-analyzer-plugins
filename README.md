@@ -1,8 +1,13 @@
 # AI Price Analyzer 插件仓库
+<p align="center">
+  <a href="./README.md">简体中文</a> |
+  <a href="./README.en.md">English</a>
+</p>
 
 这里维护 AI 中转站站点插件的唯一手写源。一个站点一个目录，扩展仓库从这些源文件生成运行时插件和站点目录。
 
 - 扩展仓库：<https://github.com/napstablook666/ai-price-analyzer>
+- 在线文档站：<https://napstablook666.github.io/ai-price-analyzer/>（VitePress，插件协议见「插件开发」一节）
 - 扩展侧的完整协议说明：[docs/plugin-development.md](https://github.com/napstablook666/ai-price-analyzer/blob/main/docs/plugin-development.md)
 - 插件仓库开发手册：[DEVELOPMENT.md](./DEVELOPMENT.md)
 
