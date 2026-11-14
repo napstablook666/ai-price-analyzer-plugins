@@ -15,9 +15,10 @@
   manifest.json
   plugin.js
   models.json
+  icon.svg        （或 icon.png，站点图标，≤ 64px、≤ 24KB）
 ```
 
-`models.json` 可以省略；省略时构建器按空别名表处理。插件 ID 必须同时等于：
+`models.json` 可以省略；省略时构建器按空别名表处理。`icon.svg` / `icon.png` 是站点图标源，构建时复制成扩展的 `icons/sites/<id>.<ext>`；缺图标首页只会显示首字母色块，扩展仓库的测试会报红。图标用扩展仓库的 `npm run plugins:icons` 抓取，抓完人工看一眼是不是该站的 logo。插件 ID 必须同时等于：
 
 - 目录名 `<id>`。
 - `manifest.json` 的 `id`。
