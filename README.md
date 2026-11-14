@@ -46,6 +46,58 @@ extension/src/shared/plugin-order.js
 
 生成物会签入扩展仓库，因此扩展源码 checkout 可以直接加载；插件源改动后仍必须重新生成。不要直接编辑生成物。
 
+## 插件商店（plugins.json）
+
+`plugins.json` 是这个仓库对外发布的插件清单，扩展默认从这里读取：
+
+```text
+https://raw.githubusercontent.com/napstablook666/ai-price-analyzer-plugins/main/plugins.json
+```
+
+扩展的「站点与插件 → 插件仓库」页可以改成任意满足同样结构的地址。清单结构：
+
+```json
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "id": "windhub",
+      "name": "WindHub",
+      "version": "0.2.1",
+      "description": "公益站公开价格接口",
+      "hosts": ["windhub.cc"],
+      "needsCode": true
+    }
+  ]
+}
+```
+
+`needsCode: true` 表示插件依赖本仓库 `plugin.js` 里的采集代码，必须等扩展发版；`false` 表示可以写成声明式规格（`hosts` / `paths` / `request` / `responseFormat` / `preset` 等字段，不需要注入代码），扩展直接从清单安装。
+
+这份清单由 `node scripts/plugin-build.mjs` 在扩展仓库生成，不要手改。
+
+## 开发模式加载本地插件
+
+扩展设置页打开「开发模式」后，可以粘贴或选择一个插件 JSON 规格直接加载，只在本机生效，并且在已安装列表里标为「本地插件」。关闭开发模式会连同本地插件一起卸载。
+
+本地插件规格就是声明式插件的字段集合：
+
+```json
+{
+  "id": "my-site",
+  "version": "0.1.0",
+  "name": "My Site",
+  "hosts": ["pricing.example.com"],
+  "paths": ["/api/pricing"],
+  "request": { "endpoint": "/api/pricing", "credentials": "omit" },
+  "responseFormat": "auto",
+  "category": "paid",
+  "mode": "direct"
+}
+```
+
+`responseFormat` 只能用在扩展已经支持的价格格式上，写自定义解析逻辑要提 PR 到扩展仓库。
+
 ## 快速开始
 
 ### 1. 准备两个仓库
