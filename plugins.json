@@ -22,16 +22,6 @@
       "needsCode": true
     },
     {
-      "id": "linux-do-marketplace",
-      "name": "Linux.do Marketplace",
-      "version": "0.3.0",
-      "description": "只读 GraphQL 价格，页面会话采集",
-      "hosts": [
-        "hub.linux.do"
-      ],
-      "needsCode": true
-    },
-    {
       "id": "windhub",
       "name": "WindHub",
       "version": "0.3.0",
