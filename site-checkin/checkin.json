@@ -4,6 +4,8 @@
   "claimMethod": "POST",
   "tokenStorageKey": "vyce_session",
   "tokenCookieName": "session",
+  "loginPath": "/login",
+  "tokenHint": "登录后自动保存；也可以粘贴 vyce_session 的值或 session Cookie 的值",
   "fields": {
     "canClaim": "canClaim",
     "streak": "streak",
