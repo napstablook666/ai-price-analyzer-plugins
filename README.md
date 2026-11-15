@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./assets/logo.svg" width="96" height="96" alt="AI Price Analyzer">
+</p>
 <h1 align="center">AI Price Analyzer Plugins</h1>
 
 <p align="center">AI Price Analyzer 站点插件的唯一手写源：一个站点一个目录，扩展仓库从这里生成可加载的运行时代码。</p>

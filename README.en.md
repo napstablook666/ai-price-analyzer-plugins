@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./assets/logo.svg" width="96" height="96" alt="AI Price Analyzer">
+</p>
 <h1 align="center">AI Price Analyzer Plugins</h1>
 
 <p align="center">The single hand-written source for AI Price Analyzer station plugins: one directory per station, and the extension repository generates loadable runtime code from it.</p>
