@@ -16,7 +16,7 @@
   <a href="https://napstablook666.github.io/ai-price-analyzer/"><img src="https://img.shields.io/badge/docs-%E5%9C%A8%E7%BA%BF-4F46E5?style=flat-square" alt="Documentation"></a>
 </p>
 
-Every relay station hides its prices behind a different endpoint, page, or login session. This repository turns each station's collection rules into its own directory: `manifest.json` describes the station and the URLs it matches, `plugin.js` holds the request and parsing logic, and `models.json` adds station-specific model aliases. The extension repository runs a builder that turns these sources into the runtime code under `src/site-plugins/`, which the browser extension loads.
+Every relay station hides its prices behind a different endpoint, page, or login session. This repository gives each station's collection rules its own directory. `manifest.json` describes the station and the URLs it matches, `plugin.js` holds the request and parsing logic, and `models.json` adds station-specific model aliases. A builder in the extension repository turns these sources into the runtime code under `src/site-plugins/`, which the browser extension loads.
 
 ## Highlights
 
@@ -41,7 +41,7 @@ Every relay station hides its prices behind a different endpoint, page, or login
 ```
 
 - `plugin/<id>/`: hand-written sources in this repository, the builder's only input.
-- `plugin-build.mjs`: runs from the extension repository root and reads each plugin's `manifest.json`, `plugin.js`, and `models.json`.
+- `plugin-build.mjs`: runs from the extension repository root, reading each plugin's `manifest.json`, `plugin.js`, and `models.json`.
 - `generated files`: the extension repository's `src/site-plugins/providers/<id>.js`, `src/site-plugins/catalog.js`, and `src/shared/plugin-order.js`.
 - `plugins.json`: the plugin registry this repository publishes and the extension reads by default.
 - `extension runtime`: the Chromium MV3 extension loads generated files and collects station prices.
@@ -163,7 +163,7 @@ To add a station-specific model alias, resolve the canonical ID first:
 node scripts/model-lookup.mjs claude sonnet
 ```
 
-Only write the alias into `models.json` once it resolves. If it does not, do not force an unknown model onto a near match; check whether the canonical table needs an update. Case differences, spacing, `.`, `_`, `-`, `provider/` prefixes, decorative suffixes such as `:free` or `:thinking`, and common date suffixes are already handled by the general rules, so they need no alias.
+Write the alias into `models.json` only once it resolves. If it does not resolve, do not force an unknown model onto a near match; check whether the canonical table needs an update. The general rules already handle case differences, spacing, `.`, `_`, `-`, `provider/` prefixes, decorative suffixes such as `:free` or `:thinking`, and common date suffixes, so those need no alias.
 
 Matching priority is: user-confirmed `modelMatchOverrides`, then this plugin's `models.json` aliases, then the canonical model table, then the built-in exact, suffix, version, and fuzzy rules.
 
@@ -190,7 +190,7 @@ With development mode enabled on the extension settings page, you can paste or s
 ## Constraints
 
 - Static imports only, from `@app/core/...` or `@app/shared/...`; no `../../` and no absolute local paths.
-- No dynamic `import()`; an MV3 service worker only loads static imports.
+- No dynamic `import()`. An MV3 service worker loads static imports only.
 - Plugins run in the service worker and have no DOM. Use `mode: "page"` with the existing page-bridge request strategies to read page data or login state.
 - Never store or print tokens, cookies, authorization headers, API keys, or complete private responses.
 - Never put station secrets, private URLs, or account identifiers in a plugin.
@@ -199,7 +199,7 @@ With development mode enabled on the extension settings page, you can paste or s
 
 - `manifest.json` has no unknown fields, and the station ID matches the directory name.
 - `plugin.js` exports `sitePlugin` and uses only static `@app/` imports.
-- Station-specific names are written to `models.json` only when genuinely needed.
+- Write station-specific names to `models.json` only when genuinely needed.
 - `node scripts/plugin-build.mjs --check` and `npm test` both pass from the extension repository.
 - A real collection run has been verified manually, then commit to both repositories.
 
