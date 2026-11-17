@@ -22,7 +22,7 @@ const preset = {
   rechargeRmb: 1,
   rechargeCredits: 1,
   rechargeRateVerified: true,
-  rechargeRateNote: "2026-11-17 实测：充 20 元实付 ¥20.00、余额 +$20.00；接口 balance_recharge_multiplier=1、无加赠档（recharge_bonus_tiers 为空）、无手续费。模型报价按 USD/1M tokens × 分组倍率，因此 1 元 = 1 美元额度。",
+  rechargeRateNote: "2026-11-17 登录态实测：充 20 元实付 ¥20.00、余额 +$20.00；9 档全部 1:1，无加赠、无手续费、无订阅制；支付宝 ¥5–2000/笔（日限 ¥10000），Stripe ¥50–5000/笔；邀请返利 5% 可转余额。",
   rechargeTiers: [
     { amount: 10, discount: 1 },
     { amount: 20, discount: 1 },
