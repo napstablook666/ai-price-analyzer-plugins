@@ -1,0 +1,13 @@
+{
+  "id": "maolaoapi",
+  "name": "maolaoapi.com",
+  "host": "maolaoapi.com",
+  "mode": "direct",
+  "order": 23,
+  "paths": [
+    "/pricing",
+    "/",
+    "/console/topup"
+  ],
+  "description": "公开定价 API，直连采集；充值 1.03 元/额度，200/500/1000 档另有折扣"
+}
