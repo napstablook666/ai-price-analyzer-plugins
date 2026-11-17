@@ -1,0 +1,13 @@
+{
+  "id": "stellaisle",
+  "name": "飓星API",
+  "host": "token.stellaisle.com",
+  "mode": "direct",
+  "order": 24,
+  "paths": [
+    "/",
+    "/pricing"
+  ],
+  "category": "public",
+  "description": "公开 /api/pricing 直连采集，90 个模型 × 17 个渠道分组"
+}

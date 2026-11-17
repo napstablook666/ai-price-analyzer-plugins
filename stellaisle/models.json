@@ -1,0 +1,15 @@
+{
+  "aliases": {
+    "gpt-5-openai-compact": "gpt-5-2025-08-07",
+    "gpt-5.1-openai-compact": "gpt-5-1",
+    "gpt-5.1-codex-openai-compact": "gpt-5-1-codex",
+    "gpt-5.1-codex-mini-openai-compact": "gpt-5-1-codex-mini",
+    "gpt-5.1-codex-max-openai-compact": "gpt-5-1-codex-max",
+    "gpt-5.2-openai-compact": "gpt-5-2",
+    "gpt-5.2-codex-openai-compact": "gpt-5-2-codex",
+    "gpt-5.3-codex-openai-compact": "gpt-5-3-codex",
+    "gpt-5.4-openai-compact": "gpt-5-4",
+    "gemini-4-argon-high": "gemini-4-argon",
+    "gemini-3.8-flash-high": "gemini-3-8-flash"
+  }
+}
