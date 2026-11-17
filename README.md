@@ -195,6 +195,11 @@ node scripts/model-lookup.mjs claude sonnet
 - 不保存、不打印 Token、Cookie、Authorization、API Key 或完整私有响应。
 - 不在插件里写站点密钥、私有 URL 或账户标识。
 
+
+## 免责声明
+
+插件只负责把站点当时返回的价目搬回来，价格本身和计费口径由站点决定。采集规则会随站点改版失效，抓到的数字也可能和你实际结算的不一致。扩展侧算出的月成本、价差都是估算，以站点后台的实际扣费为准。完整说明见[免责声明](https://napstablook666.github.io/ai-price-analyzer/disclaimer)。
+
 ## 提交前检查
 
 - `manifest.json` 没有未知字段，站点 ID 与目录名一致。

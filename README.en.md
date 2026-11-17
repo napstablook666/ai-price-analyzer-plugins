@@ -195,6 +195,10 @@ With development mode enabled on the extension settings page, you can paste or s
 - Never store or print tokens, cookies, authorization headers, API keys, or complete private responses.
 - Never put station secrets, private URLs, or account identifiers in a plugin.
 
+## Disclaimer
+
+A plugin only moves whatever the station returns at collection time; the prices and their billing rules belong to the station. Crawl rules break when stations redesign, and collected numbers may differ from what you are actually billed. Monthly cost and price difference computed on the extension side are estimates; the station's own invoice is authoritative. Full text: [disclaimer](https://napstablook666.github.io/ai-price-analyzer/disclaimer).
+
 ## Pre-submit checks
 
 - `manifest.json` has no unknown fields, and the station ID matches the directory name.
