@@ -1,0 +1,17 @@
+{
+  "id": "relayrouter",
+  "name": "RelayRouter",
+  "host": "relayrouter.app",
+  "hosts": [
+    "www.relayrouter.app",
+    "relayrouter.app"
+  ],
+  "mode": "direct",
+  "order": 25,
+  "paths": [
+    "/pricing",
+    "/console/topup",
+    "/"
+  ],
+  "description": "公开定价 API，直连采集；充值 1 元 = 1 美元额度，面值越大折扣越多（最高 7.5%）"
+}
