@@ -4,6 +4,6 @@
   "host": "jiji.cc",
   "mode": "page",
   "order": 22,
-  "addable": false,
-  "description": "带 token 的模型市场，按站点地址添加"
+  "addable": true,
+  "description": "模型市场接口要登录态，插件用你浏览器里的吉吉登录 token 直连采集"
 }

@@ -4,6 +4,6 @@
   "host": "soleapi.com",
   "mode": "direct",
   "order": 12,
-  "addable": false,
-  "description": "按具体模型页地址添加"
+  "addable": true,
+  "description": "公开模型价格接口直接采，按 Credits 计价（1 Credit = ¥1）"
 }

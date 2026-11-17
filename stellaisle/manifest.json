@@ -8,5 +8,5 @@
     "/",
     "/pricing"
   ],
-  "description": "公开 /api/pricing 直连采集，90 个模型 × 17 个渠道分组"
+  "description": "公开 /api/pricing 直连采集，90 个模型，站点不公开模型与渠道分组的对应关系，只采基准价"
 }
