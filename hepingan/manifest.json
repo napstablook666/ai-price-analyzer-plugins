@@ -7,5 +7,5 @@
   "paths": [
     "/available-channels"
   ],
-  "description": "复用当前浏览器持久登录态"
+  "description": "复用浏览器登录态，过期自动续期"
 }
