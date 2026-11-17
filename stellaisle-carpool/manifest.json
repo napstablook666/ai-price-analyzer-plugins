@@ -1,0 +1,12 @@
+{
+  "id": "stellaisle-carpool",
+  "name": "飓星API 拼车",
+  "host": "token.stellaisle.com",
+  "mode": "page",
+  "order": 26,
+  "paths": [
+    "/carpool-market"
+  ],
+  "category": "paid",
+  "description": "登录后读 /api/carpool-market 的座位清单，用座位价除以期间额度当折扣，折算站内模型价"
+}
