@@ -1,4 +1,4 @@
-import { KILLAI_PRICING_ENDPOINT, localStoragePageAuth, requestPolicy } from "@app/core/provider-registry.js";
+import { KILLAI_PRICING_ENDPOINT, cookieRefreshAuth, requestPolicy } from "@app/core/provider-registry.js";
 
 const preset = {
   id: "killai",
@@ -13,20 +13,19 @@ const preset = {
   priceCurrencyVerified: true,
   priceCurrencyNote: "",
   enabled: true,
-  mode: "page",
+  mode: "direct",
   auth: { type: "none" },
   adapter: { kind: "killai-pricing", endpoint: KILLAI_PRICING_ENDPOINT, method: "GET", responseFormat: "pqh" }
 };
 
-const pageAuth = localStoragePageAuth("auth_token", "Authorization", "未找到 KillAI 登录凭据，请先在当前 Chrome 配置文件登录后重试", "Bearer", [401], {
-  endpoint: "/api/user/auth/refresh",
-  credentials: "same-origin",
-  cookieOnly: true,
-  responsePath: "data",
-  accessTokenKey: "access_token",
-  refreshTokenKey: "refresh_token",
-  expiresInKey: "expires_in",
-  expiresAtStorageKey: "token_expires_at"
+// 登录态只在 HttpOnly cookie 里，刷新接口还校验 Origin，交给 service worker 用 DNR 换 token。
+const cookieAuth = cookieRefreshAuth({
+  cookieName: "new_api_refresh",
+  refreshPath: "/api/user/auth/refresh",
+  accessTokenPath: "data.access_token",
+  expiresAtPath: "data.access_expires_at",
+  missingMessage: "未找到 KillAI 登录凭据，请先在当前 Chrome 配置文件登录后重试",
+  failureMessage: "KillAI 登录态已失效，请在当前 Chrome 配置文件重新登录后重试"
 });
 
 export const sitePlugin = {
@@ -39,7 +38,7 @@ export const sitePlugin = {
     const prepared = {
       ...stationInput,
       baseUrl: `${url.origin}/pricing`,
-      mode: "page",
+      mode: "direct",
       auth: { type: "none" },
       adapter: { ...(stationInput.adapter || {}), kind: "killai-pricing", endpoint: KILLAI_PRICING_ENDPOINT, method: "GET", responseFormat: "pqh" }
     };
@@ -52,11 +51,10 @@ export const sitePlugin = {
     if (prepared.priceCurrencyNote == null) prepared.priceCurrencyNote = preset.priceCurrencyNote;
     return prepared;
   },
-  mode: "page",
-  openTemporaryPage: true,
+  mode: "direct",
   responseFormat: "pqh",
   authType: "none",
-  rationale: "KillAI 通过已登录页面读取 New API 价格接口",
+  rationale: "KillAI 用 cookie 登录态在后台换 token 后直连 New API 价格接口",
   preset,
-  request: requestPolicy(() => KILLAI_PRICING_ENDPOINT, { credentials: "include", pageAuth })
+  request: requestPolicy(() => KILLAI_PRICING_ENDPOINT, { cookieAuth })
 };
