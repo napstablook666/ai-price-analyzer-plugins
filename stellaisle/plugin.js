@@ -3,7 +3,7 @@ import { requestPolicy, STELLAISLE_PRICING_ENDPOINT } from "@app/core/provider-r
 const preset = {
   id: "stellaisle",
   name: "飓星API",
-  category: "public",
+  category: "paid",
   baseUrl: "https://token.stellaisle.com/pricing",
   rechargeRmb: 1,
   rechargeCredits: 1,
@@ -27,7 +27,7 @@ export const sitePlugin = {
   prepare: (stationInput, { url }) => ({
     ...stationInput,
     baseUrl: `${url.origin}/pricing`,
-    category: "public",
+    category: "paid",
     rechargeRateVerified: true,
     mode: "direct",
     auth: { type: "none" },
