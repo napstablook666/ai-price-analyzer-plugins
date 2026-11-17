@@ -4,7 +4,7 @@
     {
       "id": "sevenai",
       "name": "SevenAI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型广场，直连采集",
       "hosts": [
         "sevenai.moe"
@@ -14,7 +14,7 @@
     {
       "id": "tokenflux",
       "name": "TokenFlux",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开定价 API，直连采集",
       "hosts": [
         "tokenflux.cloud"
@@ -24,7 +24,7 @@
     {
       "id": "windhub",
       "name": "WindHub",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公益站公开价格接口",
       "hosts": [
         "windhub.cc"
@@ -34,7 +34,7 @@
     {
       "id": "centos",
       "name": "ai.centos.hk",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开定价 API，直连采集",
       "hosts": [
         "ai.centos.hk"
@@ -44,7 +44,7 @@
     {
       "id": "true-sota",
       "name": "TrueSOTA",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型价格 API",
       "hosts": [
         "true-sota.com"
@@ -54,7 +54,7 @@
     {
       "id": "sidrune",
       "name": "Sidrune",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型广场，支持汇率配置",
       "hosts": [
         "sidrune.ai"
@@ -64,7 +64,7 @@
     {
       "id": "nodeai",
       "name": "NodeAI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型广场，直连采集",
       "hosts": [
         "nodeai.cc"
@@ -74,7 +74,7 @@
     {
       "id": "killai",
       "name": "KillAI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "New API 价格，支持会话刷新",
       "hosts": [
         "api.killai.cc"
@@ -84,7 +84,7 @@
     {
       "id": "fuck-everyone",
       "name": "fuck-everyone.com",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型广场，直连采集",
       "hosts": [
         "fuck-everyone.com"
@@ -94,7 +94,7 @@
     {
       "id": "cun",
       "name": "CUN.AI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "复用登录态读取价格 API",
       "hosts": [
         "cun.ai"
@@ -104,7 +104,7 @@
     {
       "id": "soleapi",
       "name": "SoleAPI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "按具体模型页地址添加",
       "hosts": [
         "soleapi.com"
@@ -114,7 +114,7 @@
     {
       "id": "dddai",
       "name": "dddai.dev",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型价格 API",
       "hosts": [
         "dddai.dev"
@@ -124,7 +124,7 @@
     {
       "id": "liuguang",
       "name": "liuguang.ai",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型价格 API",
       "hosts": [
         "liuguang.ai"
@@ -134,7 +134,7 @@
     {
       "id": "public-pricing",
       "name": "公开价格 API",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "通用公开价格适配，按站点地址添加",
       "hosts": [
         "nomissapi.com",
@@ -146,7 +146,7 @@
     {
       "id": "hepingan",
       "name": "hepingan.top",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "复用浏览器登录态，过期自动续期",
       "hosts": [
         "api.hepingan.top"
@@ -156,7 +156,7 @@
     {
       "id": "all-in-one",
       "name": "all-in-one.icu",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "租户模型价格，页面会话采集",
       "hosts": [
         "all-in-one.icu"
@@ -166,7 +166,7 @@
     {
       "id": "aiapi",
       "name": "AIAPI",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "模型目录与价格，页面会话采集",
       "hosts": [
         "cn.aiapi.bot"
@@ -176,7 +176,7 @@
     {
       "id": "fastaitoken",
       "name": "fastaitoken.com",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "读取当前账号的可用渠道",
       "hosts": [
         "fastaitoken.com"
@@ -186,7 +186,7 @@
     {
       "id": "nexavlinks",
       "name": "NexaVlinks",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "读取当前账号的模型渠道",
       "hosts": [
         "nexavlinks.com"
@@ -196,7 +196,7 @@
     {
       "id": "cheaprouter",
       "name": "CheapRouter",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开模型价格 API",
       "hosts": [
         "cheaprouter.cc"
@@ -206,7 +206,7 @@
     {
       "id": "jiji",
       "name": "吉吉模型市场",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "带 token 的模型市场，按站点地址添加",
       "hosts": [
         "jiji.cc"
@@ -216,10 +216,31 @@
     {
       "id": "maolaoapi",
       "name": "maolaoapi.com",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "公开定价 API，直连采集；充值 1.03 元/额度，200/500/1000 档另有折扣",
       "hosts": [
         "maolaoapi.com"
+      ],
+      "needsCode": true
+    },
+    {
+      "id": "stellaisle",
+      "name": "飓星API",
+      "version": "0.7.0",
+      "description": "公开 /api/pricing 直连采集，90 个模型 × 17 个渠道分组",
+      "hosts": [
+        "token.stellaisle.com"
+      ],
+      "needsCode": true
+    },
+    {
+      "id": "relayrouter",
+      "name": "RelayRouter",
+      "version": "0.7.0",
+      "description": "公开定价 API，直连采集；充值 1 元 = 1 美元额度，面值越大折扣越多（最高 7.5%）",
+      "hosts": [
+        "www.relayrouter.app",
+        "relayrouter.app"
       ],
       "needsCode": true
     },
