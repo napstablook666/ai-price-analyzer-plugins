@@ -5,6 +5,8 @@ const preset = {
   id: "sidrune",
   name: "sidrune.ai",
   baseUrl: "https://sidrune.ai/model-plaza",
+  rechargeRateVerified: false,
+  rechargeRateNote: "站点充值折算尚未核验，当前仅保留站点原始报价，不用于已验证人民币成本比价。",
   enabled: true,
   mode: "direct",
   rechargeRmb: DEFAULT_EXCHANGE_RATE,
@@ -16,6 +18,7 @@ const preset = {
 
 export const sitePlugin = {
   id: "sidrune",
+  preserveRechargeRateVerification: true,
   host: "sidrune.ai",
   matches: ({ hostname, path }) => hostname === "sidrune.ai" && path === "/model-plaza",
   prepare: (stationInput, { url }) => ({
