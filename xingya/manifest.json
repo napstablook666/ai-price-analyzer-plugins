@@ -1,0 +1,16 @@
+{
+  "id": "xingya",
+  "name": "星芽API",
+  "host": "xingya.site",
+  "hosts": [
+    "xingya.site",
+    "xingya.space"
+  ],
+  "mode": "direct",
+  "order": 29,
+  "paths": [
+    "/",
+    "/pricing"
+  ],
+  "description": "公开 /api/pricing 直连采集，83 个模型 13 个分组；充值 1 元 = 100 芽点 = 1 美元额度，无阶梯赠送"
+}
