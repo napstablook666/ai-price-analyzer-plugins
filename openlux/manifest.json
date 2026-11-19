@@ -1,0 +1,18 @@
+{
+  "id": "openlux",
+  "name": "OpenLux",
+  "host": "openlux.ai",
+  "hosts": [
+    "www.openlux.ai",
+    "openlux.ai"
+  ],
+  "mode": "direct",
+  "order": 30,
+  "paths": [
+    "/pricing",
+    "/console/topup",
+    "/console/models",
+    "/"
+  ],
+  "description": "公开定价接口直连采集，322 个模型覆盖按 token 与按次；1 美元 = 1 美元额度，面值越大越便宜（最高 7.5%）"
+}
