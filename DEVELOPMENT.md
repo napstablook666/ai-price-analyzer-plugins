@@ -91,6 +91,7 @@ export const sitePlugin = {
 - `mode`：`direct` 或 `page`。
 - `responseFormat`：交给扩展核心的响应格式选择器。
 - `request`：使用 `requestPolicy(urlOrFn, options)`、`localStoragePageAuth` 或 `cookiePageAuth` 等现有请求策略。
+- `request.decodeResponse(payload)`：可选的同步纯函数，在主响应读出、`request.aux` 挂到 `payload.__aux` 之后、价格校验与归一之前执行。可解析 HTML 中的 JSON（SpiderAI），也可关联目录与计费 API（Leaflow）；失败直接报错，不执行页面脚本、不回退旧目录。
 - `preset`：插件目录中的默认站点模板。
 - `modelAliases`：不要手写，构建器会从 `models.json` 注入。
 
