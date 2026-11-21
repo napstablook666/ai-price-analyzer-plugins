@@ -1,0 +1,10 @@
+{
+  "id": "spiderai",
+  "name": "SpiderAI",
+  "version": "0.1.0",
+  "host": "spiderai.fun",
+  "mode": "direct",
+  "order": 32,
+  "paths": ["/"],
+  "description": "公开模型价格页内嵌目录匿名采集；登录核验充值比例与档位"
+}
