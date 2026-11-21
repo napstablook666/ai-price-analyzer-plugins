@@ -1,0 +1,9 @@
+{
+  "id": "poloai",
+  "name": "PoloAPI",
+  "host": "poloai.top",
+  "mode": "direct",
+  "order": 33,
+  "paths": ["/", "/pricing", "/wallet", "/console/topup"],
+  "description": "匿名模型广场报价；支持分组、token/缓存、长度档与按次；登录已核实充值1:1和等额快捷金额"
+}
