@@ -1,0 +1,12 @@
+{
+  "id": "juziai",
+  "name": "橘子API",
+  "host": "api.juziai.cc",
+  "mode": "direct",
+  "order": 35,
+  "paths": [
+    "/",
+    "/pricing"
+  ],
+  "description": "公开 /api/pricing 直连采集，173 个模型；充值比例与方案未验证"
+}
