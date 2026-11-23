@@ -1,0 +1,11 @@
+{
+  "id": "man8out",
+  "name": "Man8Out",
+  "host": "ai.man8out.com",
+  "mode": "direct",
+  "order": 48,
+  "paths": [
+    "/modelsmarket"
+  ],
+  "description": "公开渠道目录，直连采集"
+}
