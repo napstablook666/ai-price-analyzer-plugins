@@ -1,0 +1,11 @@
+{
+  "id": "velamost",
+  "name": "VelaMost",
+  "host": "velamost.com",
+  "mode": "direct",
+  "order": 37,
+  "paths": [
+    "/pricing"
+  ],
+  "description": "公开 /api/pricing 直连采集，92 个模型；分组倍率报文内自带，美元计价；充值比例需登录未验证"
+}
