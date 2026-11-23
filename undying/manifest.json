@@ -1,0 +1,17 @@
+{
+  "id": "undying",
+  "name": "Undy API",
+  "host": "undyapi.com",
+  "hosts": [
+    "undyapi.com",
+    "www.undyapi.com"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，88 个模型 75 个分组（倍率 0.37 ~ 11（40 档））；充值 1 美元额度 = ¥7.3"
+}
