@@ -1,0 +1,9 @@
+{
+  "id": "eapi",
+  "name": "E-API",
+  "host": "eapi.site",
+  "mode": "direct",
+  "order": 37,
+  "paths": ["/pricing"],
+  "description": "匿名模型广场报价；per_token 按折后美元/百万、fixed 按张计；充值档位未取到登录态报文"
+}
