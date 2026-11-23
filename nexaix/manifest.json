@@ -1,0 +1,10 @@
+{
+  "id": "nexaix",
+  "name": "NexAIX",
+  "version": "0.1.0",
+  "host": "nexaix.ai",
+  "mode": "direct",
+  "order": 45,
+  "paths": ["/pricing"],
+  "description": "new-api 站点，7 个模型两个分组，匿名直连采集倍率"
+}

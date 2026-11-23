@@ -1,0 +1,10 @@
+{
+  "id": "abuapi",
+  "name": "AbuAPI",
+  "version": "0.1.0",
+  "host": "www.abuai.chat",
+  "mode": "direct",
+  "order": 44,
+  "paths": ["/pricing", "/console/topup"],
+  "description": "new-api 魔改站，245 个模型 24 个分组，含按次与表达式计费"
+}

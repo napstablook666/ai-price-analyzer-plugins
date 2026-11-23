@@ -1,0 +1,10 @@
+{
+  "id": "crab",
+  "name": "Crab-AI",
+  "version": "0.1.0",
+  "host": "crab-ai.net",
+  "mode": "direct",
+  "order": 42,
+  "paths": ["/model-plaza"],
+  "description": "公开模型广场直连采集，两个分组按倍率计价，含长上下文档"
+}

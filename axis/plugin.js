@@ -1,0 +1,43 @@
+import { requestPolicy, SUB2API_MODEL_PLAZA_ENDPOINT } from "@app/core/provider-registry.js";
+
+const RECHARGE_NOTE = "站点自述「充值 1:1」，另有 GPT / Claude 月卡档位；月卡是订阅不是充值，不并入按量比例。未核验第三方收银台实付。";
+
+const preset = {
+  id: "axis",
+  name: "元流 API",
+  baseUrl: "https://api.axis.fan/model-plaza",
+  rechargeRmb: 1,
+  rechargeCurrency: "CNY",
+  rechargeCredits: 1,
+  rechargeRateVerified: true,
+  rechargeRateNote: RECHARGE_NOTE,
+  priceCurrency: "USD",
+  priceCurrencyVerified: true,
+  priceCurrencyNote: "广场按美元 / 百万 token 标价，实付 = 标价 × 分组倍率；长上下文档位真实生效，全部保留。",
+  enabled: true,
+  mode: "direct",
+  auth: { type: "none" },
+  adapter: { kind: "sub2api-model-plaza", endpoint: SUB2API_MODEL_PLAZA_ENDPOINT, method: "GET", responseFormat: "sub2api-model-plaza" }
+};
+
+export const sitePlugin = {
+  id: "axis",
+  host: "api.axis.fan",
+  preserveRechargeRateVerification: true,
+  preservePriceCurrency: true,
+  matches: ({ hostname, path }) => hostname === "api.axis.fan" && path === "/model-plaza",
+  prepareMatches: ({ hostname }) => hostname === "api.axis.fan",
+  prepare: (stationInput, { url }) => ({
+    ...stationInput,
+    baseUrl: `${url.origin}/model-plaza`,
+    mode: "direct",
+    auth: { type: "none" },
+    adapter: { ...(stationInput.adapter || {}), kind: "sub2api-model-plaza", endpoint: SUB2API_MODEL_PLAZA_ENDPOINT, method: "GET", responseFormat: "sub2api-model-plaza" }
+  }),
+  mode: "direct",
+  responseFormat: "sub2api-model-plaza",
+  authType: "none",
+  rationale: "元流 API 的模型广场接口匿名可读，直连采集分组价",
+  preset,
+  request: requestPolicy(() => SUB2API_MODEL_PLAZA_ENDPOINT, { credentials: "omit" })
+};

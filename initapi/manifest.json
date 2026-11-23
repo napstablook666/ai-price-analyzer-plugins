@@ -1,0 +1,10 @@
+{
+  "id": "initapi",
+  "name": "初元 API",
+  "version": "0.1.0",
+  "host": "initapi.ai",
+  "mode": "page",
+  "order": 43,
+  "paths": ["/model-plaza"],
+  "description": "模型广场要求登录，复用浏览器登录态，13 个分组按倍率计价，充值带阶梯赠送"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "yescode",
+  "name": "YesCode",
+  "version": "0.1.0",
+  "host": "co.yes.vg",
+  "mode": "direct",
+  "order": 46,
+  "paths": ["/model-plaza", "/subscription"],
+  "description": "sub2api 变体，公开模型目录 61 个模型，自带倍率，另有按次出图"
+}

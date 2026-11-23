@@ -1,0 +1,10 @@
+{
+  "id": "axis",
+  "name": "元流 API",
+  "version": "0.1.0",
+  "host": "api.axis.fan",
+  "mode": "direct",
+  "order": 41,
+  "paths": ["/model-plaza"],
+  "description": "公开模型广场直连采集，按分组倍率折算美元单价，长上下文分档保留"
+}

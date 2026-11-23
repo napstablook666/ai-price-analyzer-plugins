@@ -1,0 +1,10 @@
+{
+  "id": "rightcode",
+  "name": "Right Code",
+  "version": "0.1.0",
+  "host": "rightapi.io",
+  "mode": "direct",
+  "order": 47,
+  "paths": ["/pricing", "/console"],
+  "description": "Spring Boot 站，13 个上游渠道 111 个模型，含上下文分档与按次出图"
+}
