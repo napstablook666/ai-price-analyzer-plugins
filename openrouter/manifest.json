@@ -1,0 +1,9 @@
+{
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "host": "openrouter.ai",
+  "mode": "direct",
+  "order": 49,
+  "paths": ["/", "/models", "/settings/credits", "/workspaces"],
+  "description": "官方聚合站，匿名 /api/v1/models 直连全量价目"
+}
