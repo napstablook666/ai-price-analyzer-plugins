@@ -1,0 +1,11 @@
+{
+  "id": "kelaode",
+  "name": "克劳德 APi",
+  "host": "api.kelaode.si",
+  "mode": "page",
+  "order": 38,
+  "paths": [
+    "/model-plaza"
+  ],
+  "description": "模型广场要求登录，复用浏览器登录态，token 过期自动续期"
+}
