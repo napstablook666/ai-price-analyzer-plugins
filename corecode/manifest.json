@@ -1,0 +1,17 @@
+{
+  "id": "corecode",
+  "name": "CoreCode",
+  "host": "corecode.live",
+  "hosts": [
+    "corecode.live",
+    "www.corecode.live"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，28 个模型 7 个分组（倍率 0.5 ~ 2.05）；充值 1 美元额度 = ¥6.8"
+}

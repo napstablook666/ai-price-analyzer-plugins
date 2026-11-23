@@ -1,0 +1,19 @@
+{
+  "id": "kuaipao",
+  "name": "快跑AI",
+  "host": "kuaipao.ai",
+  "hosts": [
+    "kuaipao.ai",
+    "kuaipao.pro",
+    "www.kuaipao.ai",
+    "www.kuaipao.pro"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，118 个模型 15 个分组（倍率 0.2 ~ 15.3）；充值 1 美元额度 = ¥0.4"
+}

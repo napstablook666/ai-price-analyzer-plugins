@@ -1,0 +1,19 @@
+{
+  "id": "packycode",
+  "name": "packycode",
+  "host": "packycode.com",
+  "hosts": [
+    "packycode.com",
+    "packyapi.com",
+    "www.packycode.com",
+    "www.packyapi.com"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，78 个模型 25 个分组（倍率 0.3 ~ 7）；充值 1 美元额度 = ¥7"
+}

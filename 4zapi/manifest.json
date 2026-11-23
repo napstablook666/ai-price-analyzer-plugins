@@ -1,0 +1,17 @@
+{
+  "id": "4zapi",
+  "name": "4Z API",
+  "host": "4zapi.com",
+  "hosts": [
+    "4zapi.com",
+    "www.4zapi.com"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，323 个模型 80 个分组（倍率 0.040447 ~ 1.1（41 档））；充值 1 美元额度 = ¥6.68752"
+}

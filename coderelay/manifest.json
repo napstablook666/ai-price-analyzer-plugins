@@ -1,0 +1,17 @@
+{
+  "id": "coderelay",
+  "name": "CodeRelay",
+  "host": "coderelay.cn",
+  "hosts": [
+    "coderelay.cn",
+    "www.coderelay.cn"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，54 个模型 16 个分组（倍率 0.06 ~ 1.5）；充值 1 元 = 1 美元额度"
+}

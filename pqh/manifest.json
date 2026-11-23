@@ -1,0 +1,17 @@
+{
+  "id": "pqh",
+  "name": "PQH 中转站",
+  "host": "pqh.ai",
+  "hosts": [
+    "pqh.ai",
+    "www.pqh.ai"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，108 个模型 53 个分组（倍率 0.12 ~ 2.6（25 档））；充值 1 美元额度 = ¥7.3"
+}

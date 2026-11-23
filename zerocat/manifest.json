@@ -1,0 +1,17 @@
+{
+  "id": "zerocat",
+  "name": "ZeroCat",
+  "host": "zero.cat",
+  "hosts": [
+    "zero.cat",
+    "www.zero.cat"
+  ],
+  "mode": "direct",
+  "order": 40,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开定价接口直连采集，67 个模型 11 个分组（倍率 0.04 ~ 1.5）；充值 1 元 = 1 美元额度"
+}
