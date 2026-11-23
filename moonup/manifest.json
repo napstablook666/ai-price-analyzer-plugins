@@ -1,0 +1,9 @@
+{
+  "id": "moonup",
+  "name": "MoonUp",
+  "host": "moonup.dev",
+  "mode": "direct",
+  "order": 37,
+  "paths": ["/", "/models"],
+  "description": "订阅制 API 转换平台，公开模型广场直连采集"
+}
