@@ -1,0 +1,20 @@
+{
+  "id": "1xm",
+  "name": "OneXModel",
+  "version": "0.1.0",
+  "host": "1xm.ai",
+  "hosts": [
+    "1xm.ai",
+    "www.1xm.ai",
+    "api.1xm.ai"
+  ],
+  "mode": "direct",
+  "order": 55,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，54 个模型 197 条；11 个分组倍率 0.2 到 7.5，含长上下文翻倍表达式，api.1xm.ai 同一份报文"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "kaopuapi",
+  "name": "KaopuAPI",
+  "version": "0.1.0",
+  "host": "api.kaopuapi.xyz",
+  "hosts": [
+    "api.kaopuapi.xyz"
+  ],
+  "mode": "direct",
+  "order": 52,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，106 个模型 174 条；主要靠按次价（81 条 request 价），只有 2 个 billing_expr 做长上下文分段"
+}

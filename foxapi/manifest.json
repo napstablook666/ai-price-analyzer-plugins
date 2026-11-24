@@ -1,0 +1,19 @@
+{
+  "id": "foxapi",
+  "name": "FoxAPI",
+  "version": "0.1.0",
+  "host": "foxapi.chat",
+  "hosts": [
+    "foxapi.chat",
+    "www.foxapi.chat"
+  ],
+  "mode": "direct",
+  "order": 51,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，168 个模型 314 条；9 个分组倍率 0.2 到 10，94 个模型把价写进 billing_expr，含按张 0.06 与长上下文分档"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "daidaishou",
+  "name": "呆呆兽",
+  "version": "0.1.0",
+  "host": "api.daidaishou.xyz",
+  "hosts": [
+    "api.daidaishou.xyz"
+  ],
+  "mode": "direct",
+  "order": 57,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，53 个模型 134 条；8 个分组倍率 0.05 到 1，49 个表达式含按张与 1 小时缓存写系数"
+}

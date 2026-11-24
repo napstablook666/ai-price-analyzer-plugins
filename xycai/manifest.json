@@ -1,0 +1,21 @@
+{
+  "id": "xycai",
+  "name": "星云中转",
+  "version": "0.1.0",
+  "host": "xycai.cn",
+  "hosts": [
+    "xycai.cn",
+    "www.xycai.cn",
+    "xyc.ai",
+    "www.xyc.ai"
+  ],
+  "mode": "direct",
+  "order": 50,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，336 个模型 382 条模型×分组；xycai.cn 与 xyc.ai 两个域名同一份报文同一套价，元额 6.9 元对 1 美元"
+}

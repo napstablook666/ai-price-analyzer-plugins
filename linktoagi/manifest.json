@@ -1,0 +1,18 @@
+{
+  "id": "linktoagi",
+  "name": "LinkAGI",
+  "version": "0.1.0",
+  "host": "api.linktoagi.com",
+  "hosts": [
+    "api.linktoagi.com"
+  ],
+  "mode": "direct",
+  "order": 56,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，47 个模型 134 条；目录与已装 coderelay 相似度 0.963，疑似同一上游转卖，先按独立站接上"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "tccxy",
+  "name": "甜菜程序猿",
+  "version": "0.1.0",
+  "host": "api.tccxy.top",
+  "hosts": [
+    "api.tccxy.top"
+  ],
+  "mode": "direct",
+  "order": 53,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，103 个模型 318 条，文本价最密（313 条）；17 个分组，54 个表达式含 service_tier 加价与 0.01 倍率福利组"
+}
