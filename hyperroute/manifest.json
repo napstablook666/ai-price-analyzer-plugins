@@ -1,0 +1,11 @@
+{
+  "id": "hyperroute",
+  "name": "Hyperroute",
+  "version": "0.1.0",
+  "host": "hyperroute.cc",
+  "mode": "page",
+  "order": 72,
+  "addable": true,
+  "paths": ["/"],
+  "description": "Cloudflare 挡住直连，插件开临时页借浏览器上下文读公开 /api/pricing；56 个模型 11 个分组，其中 5 个按次计价"
+}
