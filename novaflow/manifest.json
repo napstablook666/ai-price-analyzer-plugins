@@ -1,0 +1,18 @@
+{
+  "id": "novaflow",
+  "name": "NovaFlow 智舟",
+  "version": "0.1.0",
+  "host": "ycnovaflow.vip",
+  "hosts": [
+    "ycnovaflow.vip"
+  ],
+  "mode": "direct",
+  "order": 71,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，31 个模型 54 条；12 个分组倍率 0.01 到 3，27 个表达式按 100k 上下文分档，7 条计量式解析不了"
+}

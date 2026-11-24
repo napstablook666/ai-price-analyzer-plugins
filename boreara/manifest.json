@@ -1,0 +1,18 @@
+{
+  "id": "boreara",
+  "name": "极光 Boreara",
+  "version": "0.1.0",
+  "host": "api.boreara.com",
+  "hosts": [
+    "api.boreara.com"
+  ],
+  "mode": "direct",
+  "order": 67,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，31 个模型 85 条；9 个分组倍率 0 到 1（含 free 组），全站零表达式，走 relayrouter 基座吃 quota_type 与 step_ratios"
+}

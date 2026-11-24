@@ -1,0 +1,18 @@
+{
+  "id": "tokenmarket",
+  "name": "TokenMarket",
+  "version": "0.1.0",
+  "host": "tokenmarket.cheap",
+  "hosts": [
+    "tokenmarket.cheap"
+  ],
+  "mode": "direct",
+  "order": 68,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，100 个模型 255 条；20 个分组倍率 0.08 到 3.6，61 个表达式含按张与图片 token 系数，1 条视频按秒表达式解析不了"
+}

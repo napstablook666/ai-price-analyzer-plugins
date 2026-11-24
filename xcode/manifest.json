@@ -1,0 +1,18 @@
+{
+  "id": "xcode",
+  "name": "Xcode",
+  "version": "0.1.0",
+  "host": "xcode.best",
+  "hosts": [
+    "xcode.best"
+  ],
+  "mode": "direct",
+  "order": 69,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，89 个模型 229 条；26 个分组倍率 0.15 到 3.1，41 个表达式含 fixed 按张价，1 条视频按秒表达式解析不了"
+}

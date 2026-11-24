@@ -1,0 +1,18 @@
+{
+  "id": "fuelapi",
+  "name": "Fuel API",
+  "version": "0.1.0",
+  "host": "fuelapi.top",
+  "hosts": [
+    "fuelapi.top"
+  ],
+  "mode": "direct",
+  "order": 70,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，45 个模型 209 条；28 个分组倍率 0.04 到 1.4，45 个模型全带表达式，6 条视频/计量式解析不了"
+}

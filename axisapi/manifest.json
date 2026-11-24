@@ -1,0 +1,18 @@
+{
+  "id": "axisapi",
+  "name": "Axis API",
+  "version": "0.1.0",
+  "host": "axisapi.cn",
+  "hosts": [
+    "axisapi.cn"
+  ],
+  "mode": "direct",
+  "order": 66,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，35 个模型 67 条；13 个分组倍率 0.001 到 10，35 个模型全带表达式，含 DeepSeek 上海时区分时双倍"
+}
