@@ -1,0 +1,18 @@
+{
+  "id": "agentgate",
+  "name": "AgentGate",
+  "version": "0.1.0",
+  "host": "agentgate.cc",
+  "hosts": [
+    "agentgate.cc"
+  ],
+  "mode": "direct",
+  "order": 63,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，39 个模型 76 条；7 个分组倍率 0.25 到 1，39 个表达式全部按 272k 分档并带 12 小时缓存写系数"
+}

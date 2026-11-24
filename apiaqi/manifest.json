@@ -1,0 +1,18 @@
+{
+  "id": "apiaqi",
+  "name": "AQIAPI",
+  "version": "0.1.0",
+  "host": "api2.apiaqi.com",
+  "hosts": [
+    "api2.apiaqi.com"
+  ],
+  "mode": "direct",
+  "order": 62,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，39 个模型 166 条；16 个分组倍率 1 到 26，只有 13 个表达式，主要靠 model_ratio 折算"
+}

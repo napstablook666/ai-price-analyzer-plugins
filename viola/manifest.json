@@ -1,0 +1,19 @@
+{
+  "id": "viola",
+  "name": "Viola",
+  "version": "0.1.0",
+  "host": "api.viola-api.top",
+  "hosts": [
+    "api.viola-api.top",
+    "viola-api.top"
+  ],
+  "mode": "direct",
+  "order": 65,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，36 个模型 103 条；17 个分组倍率 0.1 到 1.25，9 个表达式带上海时区分时翻倍，两个域名同一份报文"
+}

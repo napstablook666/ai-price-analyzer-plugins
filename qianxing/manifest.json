@@ -1,0 +1,19 @@
+{
+  "id": "qianxing",
+  "name": "乾行AI",
+  "version": "0.1.0",
+  "host": "qianxing.pro",
+  "hosts": [
+    "qianxing.pro",
+    "fast.qianxing.pro"
+  ],
+  "mode": "direct",
+  "order": 60,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，45 个模型 111 条；16 个分组倍率 0.25 到 20，44 个表达式含长上下文分档与 service_tier 加价，fast 子域同一份报文"
+}

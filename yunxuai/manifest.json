@@ -1,0 +1,18 @@
+{
+  "id": "yunxuai",
+  "name": "云续AI",
+  "version": "0.1.0",
+  "host": "api.yunxuai.cc",
+  "hosts": [
+    "api.yunxuai.cc"
+  ],
+  "mode": "direct",
+  "order": 61,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，42 个模型 99 条；9 个分组倍率 0.08 到 1.3，26 个表达式按 272k 上下文分档并带缓存写系数"
+}

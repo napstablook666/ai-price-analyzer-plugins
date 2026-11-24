@@ -1,0 +1,18 @@
+{
+  "id": "fengying",
+  "name": "风影",
+  "version": "0.1.0",
+  "host": "api.fengying.xin",
+  "hosts": [
+    "api.fengying.xin"
+  ],
+  "mode": "direct",
+  "order": 58,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，53 个模型 101 条全是文本价；5 个分组倍率 0.1 到 999，14 个表达式带 UTC 工作日分时倍率"
+}
