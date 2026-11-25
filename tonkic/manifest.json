@@ -1,0 +1,20 @@
+{
+  "id": "tonkic",
+  "name": "TonkicAPI",
+  "version": "0.1.0",
+  "host": "tonkicapi.xyz",
+  "hosts": [
+    "tonkicapi.xyz",
+    "www.tonkicapi.xyz"
+  ],
+  "mode": "direct",
+  "order": 81,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup",
+    "/topup"
+  ],
+  "description": "匿名 /api/pricing 直连采集：7 个模型 48 条（模型少但分组多）；7 个分组倍率 0.05 到 1，全部 7 个模型都带 billing_expr（272K 长短上下文分档）；备用域 us.tonkicapi.xyz 实测 502"
+}

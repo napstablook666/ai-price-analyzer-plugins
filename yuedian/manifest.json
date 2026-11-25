@@ -1,0 +1,20 @@
+{
+  "id": "yuedian",
+  "name": "跃点 API",
+  "version": "0.1.0",
+  "host": "mxwq.net",
+  "hosts": [
+    "mxwq.net",
+    "www.mxwq.net"
+  ],
+  "mode": "direct",
+  "order": 78,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup",
+    "/topup"
+  ],
+  "description": "匿名 /api/pricing 直连采集：2026-11-24 快照 22 个模型 95 条（文本 91 / 按次 4；次日复测已涨到 137 条，插件按线上实时数据算）；5 个分组倍率 0.2 到 1，20 个模型把价写进 billing_expr，含 272K 长上下文分档与 service_tier 快档双倍"
+}
