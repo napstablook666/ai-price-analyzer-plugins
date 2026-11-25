@@ -1,0 +1,19 @@
+{
+  "id": "bitwiseplus",
+  "name": "BitwisePlus",
+  "version": "0.1.0",
+  "host": "bitwiseplus.cc",
+  "hosts": [
+    "bitwiseplus.cc"
+  ],
+  "mode": "direct",
+  "order": 84,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup",
+    "/topup"
+  ],
+  "description": "匿名 /api/pricing 直连采集：16 个模型 54 条（文本 44 / 按张 10）；3 个分组倍率 0.1 到 0.2，11 个模型带 billing_expr（272K 分档 + 12 小时缓存 cc12h），5 个出图模型按张 0.2"
+}

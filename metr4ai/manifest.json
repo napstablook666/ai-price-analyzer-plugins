@@ -1,0 +1,16 @@
+{
+  "id": "metr4ai",
+  "name": "Akari AI 中转站",
+  "host": "metr4ai.com",
+  "hosts": [
+    "metr4ai.com"
+  ],
+  "mode": "direct",
+  "order": 84,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，26 个在售模型、7 个分组（倍率 0.08~1.5），58 行（全 token）、1 条表达式解析不出进未决，倍率 1 = $2/百万 token，充值 ¥1 = 1 美元额度"
+}

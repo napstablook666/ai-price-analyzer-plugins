@@ -1,0 +1,16 @@
+{
+  "id": "fastmodel",
+  "name": "Fast Model",
+  "host": "fastmodel.top",
+  "hosts": [
+    "fastmodel.top"
+  ],
+  "mode": "direct",
+  "order": 87,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，46 个在售模型、1 个分组（倍率 1），31 行（21 条 token、10 条按张/按次）、15 条表达式解析不出进未决，倍率 1 = $2/百万 token，充值 ¥7.3 = 1 美元额度"
+}

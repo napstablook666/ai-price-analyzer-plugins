@@ -1,0 +1,19 @@
+{
+  "id": "deadlion",
+  "name": "New AI",
+  "version": "0.1.0",
+  "host": "ai.deadlion.cn",
+  "hosts": [
+    "ai.deadlion.cn"
+  ],
+  "mode": "direct",
+  "order": 77,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup",
+    "/topup"
+  ],
+  "description": "匿名 /api/pricing 直连采集：17 个模型 26 条（default / vip 两个分组倍率都是 1）；全部按 model_ratio 走 token 价，无 billing_expr、无按次、无缓存字段；quota_per_unit = 1000000 故 ratioBase 1（倍率 1 = $1/百万）"
+}

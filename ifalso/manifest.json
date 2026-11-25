@@ -1,0 +1,16 @@
+{
+  "id": "ifalso",
+  "name": "轻盈科技",
+  "host": "api.ifalso.com",
+  "hosts": [
+    "api.ifalso.com"
+  ],
+  "mode": "direct",
+  "order": 85,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，39 个在售模型、14 个分组（倍率 0.3~7），46 行（36 条 token、5 条按秒、5 条按张）、4 条表达式解析不出进未决，倍率 1 = $2/百万 token，充值 ¥1 = 1 美元额度"
+}

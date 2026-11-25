@@ -1,0 +1,17 @@
+{
+  "id": "hhapi",
+  "name": "HHapi",
+  "host": "hhapi.xyz",
+  "hosts": [
+    "hhapi.xyz",
+    "www.hhapi.xyz"
+  ],
+  "mode": "direct",
+  "order": 83,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console/topup"
+  ],
+  "description": "公开 /api/pricing 直连采集，59 个在售模型、27 个分组（倍率 0.06~10），187 行（177 条 token、10 条按张）、6 条表达式解析不出进未决，倍率 1 = $2/百万 token，充值 ¥1 = 1 美元额度"
+}

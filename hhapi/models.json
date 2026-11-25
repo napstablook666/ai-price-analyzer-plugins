@@ -1,0 +1,12 @@
+{
+  "aliases": {
+    "gpt-image-2.5-flare-all": "gpt-image-2-5",
+    "gpt-image-2.5-sunburst-all": "gpt-image-2-5",
+    "gpt-image-2.6-flare-all": "gpt-image-2-6",
+    "gpt-image-2.6-sunburst-all": "gpt-image-2-6",
+    "gemini-4-hydrogen-request": "gemini-4-hydrogen",
+    "gemini-4-argon-request": "gemini-4-argon",
+    "gemini-4-carbon-request": "gemini-4-carbon",
+    "gemini-3.8-flash-request": "gemini-3-8-flash"
+  }
+}

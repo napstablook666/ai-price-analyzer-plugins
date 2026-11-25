@@ -1,0 +1,19 @@
+{
+  "id": "orcax",
+  "name": "Orca X 小虎鲸",
+  "version": "0.1.0",
+  "host": "orcax.net",
+  "hosts": [
+    "orcax.net"
+  ],
+  "mode": "direct",
+  "order": 79,
+  "paths": [
+    "/",
+    "/pricing",
+    "/console",
+    "/console/topup",
+    "/topup"
+  ],
+  "description": "匿名 /api/pricing 直连采集：14 个模型 14 条，单一 Gold 分组 0.6 倍；2 个出图模型把张价写进 billing_expr（img / img_cr 变量），12 条带 cache_ratio"
+}

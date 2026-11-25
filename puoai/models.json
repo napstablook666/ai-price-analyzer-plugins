@@ -1,0 +1,14 @@
+{
+  "aliases": {
+    "nano-banana-2": "gemini-3-1-flash-image",
+    "nano-banana-2-cl": "gemini-3-1-flash-image",
+    "nano-banana-2-2k-cl": "gemini-3-1-flash-image",
+    "nano-banana-2-4k-cl": "gemini-3-1-flash-image",
+    "nano-banana-2-lite": "gemini-3-1-flash-lite-image",
+    "nano-banana-pro": "gemini-3-pro-image",
+    "nano-banana-pro-cl": "gemini-3-pro-image",
+    "nano-banana-pro-vip": "gemini-3-pro-image",
+    "nano-banana-pro-4k-vip": "gemini-3-pro-image",
+    "gemini-3.1-pro": "gemini-3-1-pro-preview"
+  }
+}
