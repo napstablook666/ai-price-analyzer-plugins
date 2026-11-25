@@ -1,0 +1,11 @@
+{
+  "id": "su8",
+  "name": "SU8 Codes",
+  "version": "0.1.0",
+  "host": "www.su8.codes",
+  "hosts": ["www.su8.codes", "su8.codes"],
+  "mode": "direct",
+  "order": 91,
+  "paths": ["/", "/models", "/pricing", "/model/", "/docs"],
+  "description": "匿名 /api/public/models 直连采集：34 个模型 68 条，13 个渠道各出一行，取站点标注的到手价（landed）；8 条按张出图；套餐更便宜但主价用按量价"
+}
