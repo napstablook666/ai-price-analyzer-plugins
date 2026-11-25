@@ -1,0 +1,16 @@
+{
+  "id": "fake-login",
+  "name": "假站（续期 fixture）",
+  "version": "0.0.0",
+  "host": "fake-login.invalid",
+  "hosts": [
+    "fake-login.invalid"
+  ],
+  "mode": "direct",
+  "order": 999,
+  "addable": false,
+  "paths": [
+    "/pricing"
+  ],
+  "description": "扩展测试用假站：只声明凭据续期，不发真实请求。放在 .fixtures 下，构建器按点开头跳过，不会进 plugins.json 或站点列表。"
+}
